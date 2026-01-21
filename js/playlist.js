@@ -83,4 +83,12 @@ let songs = [
     coverImg: "downloaimage p",
     audio: "Manasantha"
   }
+  ,
+  {
+    name: "Meesala Pilla",
+    artist: "Snehithudu",
+    img: "downloaimage p",
+    coverImg: "downloaimage p",
+    audio: "Meesala Pilla"
+  }
 ]
