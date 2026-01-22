@@ -1,4 +1,4 @@
-// Playlist data with language categories
+// Playlist data with language categories - Updated to match actual files
 const playlists = {
   telugu: [
     {
@@ -69,28 +69,28 @@ const playlists = {
       artist: "Sid Sriram",
       img: "img1",
       coverImg: "img1",
-      audio: "Inkem Inkem Inkem Kaavaale"
+      audio: "Inkem Inkem Inkem Kaavaale - SenSongsMp3.Co"
     },
     {
       name: "Karthika Deepam",
       artist: "Bheems Ceciroleo",
       img: "img1",
       coverImg: "img1",
-      audio: "Karthika Deepam Remix"
+      audio: "Karthika-Deepam-Remix-Song-Bheems-Ceciroleo-NaaSongs"
     },
     {
       name: "Gaali Vaaluga",
       artist: "Armaan Malik",
       img: "img1",
       coverImg: "img1",
-      audio: "Gaali Vaaluga"
+      audio: "Gaali Vaaluga - SenSongsMp3.Co"
     },
     {
       name: "Undiporaadhey",
       artist: "Anurag Kulkarni",
       img: "img1",
       coverImg: "img1",
-      audio: "Undiporaadhey"
+      audio: "Undiporaadhey - SenSongsMp3.Co"
     },
     {
       name: "Kanapadava",
@@ -104,7 +104,7 @@ const playlists = {
       artist: "Ilaiyaraaja",
       img: "img1",
       coverImg: "img1",
-      audio: "05 - Allantha Doorala"
+      audio: "05 - Allantha Doorala  - SenSongsMp3.co"
     },
     {
       name: "Bayilone Ballipalike",
@@ -114,7 +114,6 @@ const playlists = {
       audio: "Bayilone Ballipalike"
     }
   ],
-
   hindi: [
     {
       name: "Give Me Some Sunshine",
@@ -128,7 +127,7 @@ const playlists = {
       artist: "S.P. Balasubramanyam",
       img: "img1",
       coverImg: "img1",
-      audio: "Teliyade Teliyade"
+      audio: "Teliyade Teliyade - SenSongsMp3.Com"
     },
     {
       name: "Calm Down",
@@ -138,8 +137,8 @@ const playlists = {
       audio: "calmdown"
     },
     {
-      name: "Soulmate",
-      artist: "Badshah · Arijit Singh",
+      name: "Badshah · Arijit Singh",
+      artist: "Soulmate",
       img: "img1",
       coverImg: "img1",
       audio: "badsh"
@@ -152,7 +151,6 @@ const playlists = {
       audio: "Hook Step"
     }
   ],
-
   english: [
     {
       name: "Until I Found You",
@@ -190,7 +188,6 @@ const playlists = {
       audio: "Sayyare"
     }
   ],
-
   punjabi: [
     {
       name: "G.O.A.T.",
@@ -211,14 +208,40 @@ const playlists = {
       artist: "Sri Ranga",
       img: "img1",
       coverImg: "img1",
-      audio: "Na Prema Kathaku"
+      audio: "Na Prema Kathaku - SenSongsmp3.Co"
     },
     {
       name: "Naatu Naatu",
       artist: "Rahul Sipligunj",
       img: "img1",
       coverImg: "img1",
-      audio: "Naatu Naatu"
+      audio: "Fear"
     }
   ]
 };
+
+// Current filtered songs array
+let currentSongs = [];
+let currentLanguage = 'all';
+
+// Initialize with all songs combined
+function initializePlaylist() {
+  currentSongs = [
+    ...playlists.telugu,
+    ...playlists.hindi,
+    ...playlists.english,
+    ...playlists.punjabi
+  ];
+  currentLanguage = 'all';
+}
+
+// Call initialization
+initializePlaylist();
+
+// Export for use in other scripts
+window.playlists = playlists;
+window.currentSongs = currentSongs;
+window.currentLanguage = currentLanguage;
+window.lyricsDatabase = {};
+window.initializePlaylist = initializePlaylist;
+
