@@ -1,5 +1,4 @@
 // Playlist data with language categories
-const playlists = {
   telugu: [
     {
       name: "Nee Prashnalu",
@@ -217,5 +216,4 @@ const playlists = {
       coverImg: "img1",
       audio: "Naatu Naatu"
     }
-};
 ]
