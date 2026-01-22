@@ -1,4 +1,5 @@
 // Playlist data with language categories
+const playlists = {
   telugu: [
     {
       name: "Nee Prashnalu",
@@ -113,6 +114,7 @@
       audio: "Bayilone Ballipalike"
     }
   ],
+
   hindi: [
     {
       name: "Give Me Some Sunshine",
@@ -136,8 +138,8 @@
       audio: "calmdown"
     },
     {
-      name: "Badshah · Arijit Singh",
-      artist: "Soulmate",
+      name: "Soulmate",
+      artist: "Badshah · Arijit Singh",
       img: "img1",
       coverImg: "img1",
       audio: "badsh"
@@ -150,6 +152,7 @@
       audio: "Hook Step"
     }
   ],
+
   english: [
     {
       name: "Until I Found You",
@@ -187,6 +190,7 @@
       audio: "Sayyare"
     }
   ],
+
   punjabi: [
     {
       name: "G.O.A.T.",
@@ -216,4 +220,5 @@
       coverImg: "img1",
       audio: "Naatu Naatu"
     }
-]
+  ]
+};
